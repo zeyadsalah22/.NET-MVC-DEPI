@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Day6Mydemo.Models;
-
+using Day6Mydemo.ViewModels;
 namespace Day6Mydemo.Controllers
 {
     public class EmployeesController : Controller
@@ -153,6 +153,29 @@ namespace Day6Mydemo.Controllers
 
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult ShowEmployee(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+            var employee = _context.Employees
+                .Include(e => e.Depart)
+                .FirstOrDefault(m => m.EmployeeId == id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            EmployeeViewModel employeeViewModel = new EmployeeViewModel() {
+                EmployeeId = employee.EmployeeId,
+                EmployeeName = employee.EmployeeName,
+                Job = employee.Job,
+                DepartmentName = employee.Depart.DepartmentName,
+                DepartmentManager = employee.Depart.DepartmnetManager
+            };
+            return View(employeeViewModel);
         }
 
         private bool EmployeeExists(int id)

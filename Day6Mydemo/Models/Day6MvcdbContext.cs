@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Day6Mydemo.ViewModels;
 
 namespace Day6Mydemo.Models
 {
@@ -51,5 +52,7 @@ namespace Day6Mydemo.Models
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+public DbSet<Day6Mydemo.ViewModels.EmployeeViewModel> EmployeeViewModel { get; set; } = default!;
     }
 }

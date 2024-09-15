@@ -31,7 +31,7 @@ namespace Day6Mydemo
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=ShowWebsite}/{id?}");
 
             app.Run();
         }
