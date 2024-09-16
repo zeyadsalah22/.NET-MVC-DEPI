@@ -11,6 +11,13 @@ namespace Day6Mydemo
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            //builder.Services.AddRazorPages().AddSessionStateTempDataProvider();
+            //builder.Services.AddControllersWithViews().AddSessionStateTempDataProvider();
+            builder.Services.AddSession(config =>
+            {
+                config.IdleTimeout = TimeSpan.FromMinutes(30);
+            });
+
             builder.Services.AddDbContext<Day6MvcdbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
@@ -28,6 +35,8 @@ namespace Day6Mydemo
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",

@@ -17,9 +17,10 @@ namespace Day6Mydemo.Models
         {
         }
 
-        public virtual DbSet<Department> Departments { get; set; }
+        public DbSet<Department> Departments { get; set; }
 
-        public virtual DbSet<Employee> Employees { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

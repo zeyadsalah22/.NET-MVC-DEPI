@@ -11,6 +11,11 @@ namespace Day6Mydemo.Controllers
 {
     public class DepartmentsController : Controller
     {
+        [TempData]
+        public string MessageAdd { get; set; }
+        [TempData]
+        public string MessageDelete { get; set; }
+
         private readonly Day6MvcdbContext _context;
 
         public DepartmentsController(Day6MvcdbContext context)
@@ -59,6 +64,7 @@ namespace Day6Mydemo.Controllers
             {
                 _context.Add(department);
                 _context.SaveChanges();
+                MessageAdd = $"Department {department.DepartmentName} added successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(department);
@@ -145,6 +151,7 @@ namespace Day6Mydemo.Controllers
             }
 
             _context.SaveChanges();
+            MessageDelete = $"Department {department.DepartmentName} deleted successfully";
             return RedirectToAction(nameof(Index));
         }
 

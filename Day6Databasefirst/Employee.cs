@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace Day6Mydemo.Models { 
+namespace Day6Databasefirst
+{ 
 
     public partial class Employee
     {

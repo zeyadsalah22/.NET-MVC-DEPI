@@ -10,33 +10,57 @@ namespace Day6Mydemo.Controllers
         }
         public IActionResult SetTempData()
         {
-            TempData.Add("name", "samrtsoftware");
+            TempData.Add("name", "samrt software");
             TempData["age"] = 25;
             return Content("saved tempdata........");
         }
         public IActionResult GetTempData()
         {
-            string name = TempData["name"].ToString();
-            int age = (int) TempData["age"];
+            string name = "No data";
+            int age = 0;
+            if (TempData.ContainsKey("name"))
+            {
+                name = TempData["name"].ToString();
+            }
+            if (TempData.ContainsKey("age"))
+            {
+                age = (int)TempData["age"];
+            }
             return Content($"Name: {name}, Age: {age}");
         }
         public IActionResult GetTempData2()
         {
-            string name = TempData.Peek("name").ToString();
-            int age = (int)TempData.Peek("age");
+            string name = "No data";
+            int age = 0;
+            if (TempData.ContainsKey("name"))
+            {
+                name = TempData.Peek("name").ToString();
+            }
+            if (TempData.ContainsKey("age"))
+            {
+                age = (int)TempData.Peek("age");
+            }
             return Content($"Name: {name}, Age: {age}");
         }
         public IActionResult GetTempData3()
         {
-            string name = TempData["name"].ToString();
-            int age = (int)TempData["age"];
+            string name = "No data";
+            int age = 0;
+            if (TempData.ContainsKey("name"))
+            {
+                name = TempData["name"].ToString();
+            }
+            if (TempData.ContainsKey("age"))
+            {
+                age = (int)TempData["age"];
+            }
             TempData.Keep();
             return Content($"Name: {name}, Age: {age}");
         }
         public IActionResult SetCookies()
         {
             CookieOptions cookieOptions = new CookieOptions();
-            cookieOptions.Expires = System.DateTime.Now.AddDays(15);
+            cookieOptions.Expires = DateTime.Now.AddDays(15);
             Response.Cookies.Append("name", "smartsoftware", cookieOptions);
             Response.Cookies.Append("age", "25",cookieOptions);
             return Content("Cookies saved........");
@@ -47,6 +71,15 @@ namespace Day6Mydemo.Controllers
             string name = Request.Cookies["name"];
             string age = Request.Cookies["age"];
             return Content($"Name: {name}, Age: {age}");
+        }
+
+        public IActionResult CleanCookies()
+        {
+            CookieOptions cookieOptions = new CookieOptions();
+            cookieOptions.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Append("name", "smartsoftware", cookieOptions);
+            Response.Cookies.Append("age", "25", cookieOptions);
+            return Content("Cookies Cleaned ....");
         }
 
         public IActionResult SetSessions()

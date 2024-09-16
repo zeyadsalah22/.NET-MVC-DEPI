@@ -12,7 +12,10 @@ namespace Day6Mydemo.Controllers
     public class EmployeesController : Controller
     {
         private readonly Day6MvcdbContext _context;
-
+        [TempData]
+        public string MessageAdd { get; set; }
+        [TempData]
+        public string MessageDelete { get; set; }
         public EmployeesController(Day6MvcdbContext context)
         {
             _context = context;
@@ -62,6 +65,7 @@ namespace Day6Mydemo.Controllers
             {
                 _context.Add(employee);
                 _context.SaveChanges();
+                MessageAdd = $"Employee {employee.EmployeeName} added successfully";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DepartId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.DepartId);
@@ -152,6 +156,7 @@ namespace Day6Mydemo.Controllers
             }
 
             _context.SaveChanges();
+            MessageDelete = $"Employee {employee.EmployeeName} deleted successfully";
             return RedirectToAction(nameof(Index));
         }
 

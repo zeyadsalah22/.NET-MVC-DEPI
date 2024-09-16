@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Day6Databasefirst")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+186ebe87f54f3c3d460fba2d8e1f0d8678c7e313")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af9adc811de50824fc077167b777c5367cecfd50")]
 [assembly: System.Reflection.AssemblyProductAttribute("Day6Databasefirst")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Day6Databasefirst")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
