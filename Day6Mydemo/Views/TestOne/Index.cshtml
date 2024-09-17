@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "TestOne";
+}
+<h1>Index</h1>
+Session : @Context.Session.GetString("session1");
+<br />
+Temp Data : @TempData["FullRequest"]
+<br />
+View Data : @ViewData["ViewDataVal"]
+<br />
+View Bag : @ViewBag.viewbagval

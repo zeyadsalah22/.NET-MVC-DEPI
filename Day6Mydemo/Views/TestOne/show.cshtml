@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "TestOne";
+}
+<h1>Show</h1>
+Session : @Context.Session.GetString("session1");
+<br />
+Temp Data : @TempData["FullRequest"]
+<br />
+View Data : @ViewData["ViewDataVal"]
+<br />
+View Bag : @ViewBag.viewbagval
+
+<br>
+<a href="/TestTwo/Index">Go to the other controller</a>

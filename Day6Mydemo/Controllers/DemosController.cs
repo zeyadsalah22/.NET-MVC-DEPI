@@ -91,7 +91,7 @@ namespace Day6Mydemo.Controllers
         }
         public IActionResult GetSessions()
         {
-            string name = HttpContext.Session.GetString("name");
+            string? name = HttpContext.Session.GetString("name");
             int? age = HttpContext.Session.GetInt32("age");
             return Content($"Name: {name}, Age: {age}");
         }
