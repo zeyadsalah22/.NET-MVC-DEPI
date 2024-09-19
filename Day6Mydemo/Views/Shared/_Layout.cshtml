@@ -22,16 +22,25 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        @if (!string.IsNullOrEmpty(ViewContext.HttpContext.Session.GetString("Username")))
+                        {
+                            <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Departments" asp-action="Index">Departments</a>
-                        </li>
-                        <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Employees" asp-action="Index">Employees</a>
-                        </li>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                    @if (!string.IsNullOrEmpty(ViewContext.HttpContext.Session.GetString("Username")))
+                    {
+                        <span class="nav-item d-flex me-2">
+                            <h4>Hi, @ViewContext.HttpContext.Session.GetString("Username")!</h4>
+                        </span>
+                    }
                 </div>
             </div>
         </nav>

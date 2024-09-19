@@ -3,44 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\testtwo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\testtwo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\controllers\\testtwocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:controllers\\testtwocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\controllers\\testonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:controllers\\testonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\testone\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\testone\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\testone\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\testone\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\authusers\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\authusers\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\controllers\\authuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:controllers\\authuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\authusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\authusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\authusers\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:views\\authusers\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\controllers\\demoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:controllers\\demoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDD1789D-F0CA-4FB3-9705-50A4D86F21CD}|Day6Mydemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\day6mydemo\\views\\shared\\_layout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -91,97 +71,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\TestTwo\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\TestTwo\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\TestTwo\\Index.cshtml",
-              "RelativeToolTip": "Views\\TestTwo\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T13:08:29.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TestTwoController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\TestTwoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TestTwoController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\TestTwoController.cs",
-              "RelativeToolTip": "Controllers\\TestTwoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T13:03:13.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "show.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\TestOne\\show.cshtml",
-              "RelativeDocumentMoniker": "Views\\TestOne\\show.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\TestOne\\show.cshtml",
-              "RelativeToolTip": "Views\\TestOne\\show.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T12:52:18.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\TestOne\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\TestOne\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\TestOne\\Index.cshtml",
-              "RelativeToolTip": "Views\\TestOne\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T12:48:23.384Z",
+              "WhenOpened": "2024-09-19T14:04:08.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TestOneController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\TestOneController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TestOneController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\TestOneController.cs",
-              "RelativeToolTip": "Controllers\\TestOneController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T12:45:55.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\Departments\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Departments\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\Departments\\Create.cshtml",
-              "RelativeToolTip": "Views\\Departments\\Create.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T08:59:02.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Models\\Employee.cs",
               "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T08:57:45.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Models\\Department.cs",
@@ -189,8 +104,7 @@
               "RelativeToolTip": "Models\\Department.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T08:57:37.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T08:57:37.994Z"
             },
             {
               "$type": "Document",
@@ -202,12 +116,11 @@
               "RelativeToolTip": "Views\\AuthUsers\\login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T08:43:02.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T08:43:02.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\AuthUsers\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\AuthUsers\\Index.cshtml",
@@ -220,20 +133,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "AuthUsersController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\AuthUsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthUsersController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\AuthUsersController.cs",
               "RelativeToolTip": "Controllers\\AuthUsersController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAwE0AAAANAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwBcAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T15:22:48.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\Departments\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Departments\\Index.cshtml",
@@ -241,12 +154,11 @@
               "RelativeToolTip": "Views\\Departments\\Index.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T13:07:22.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T13:07:22.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
@@ -254,12 +166,11 @@
               "RelativeToolTip": "Controllers\\DepartmentsController.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAkwD8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T13:05:25.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T13:05:25.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "DemosController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\DemosController.cs",
               "RelativeDocumentMoniker": "Controllers\\DemosController.cs",
@@ -267,12 +178,11 @@
               "RelativeToolTip": "Controllers\\DemosController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:26:00.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T11:26:00.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
@@ -280,12 +190,11 @@
               "RelativeToolTip": "Controllers\\EmployeesController.cs",
               "ViewState": "AQIAADAAAAAAAAAAAAAcwD0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T18:18:07.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T18:18:07.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 13,
               "Title": "ShowWebsite.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\Home\\ShowWebsite.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ShowWebsite.cshtml",
@@ -297,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -309,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 11,
               "Title": "_Layout2.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Views\\Shared\\_Layout2.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout2.cshtml",
@@ -321,15 +230,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCYAAAAMAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T10:40:00.112Z"
+              "WhenOpened": "2024-09-14T10:40:00.112Z",
+              "EditorCaption": ""
             }
           ]
         }

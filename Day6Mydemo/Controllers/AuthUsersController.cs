@@ -21,7 +21,11 @@ namespace Day6Mydemo.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("Username")) || string.IsNullOrEmpty(HttpContext.Session.GetString("Password")))
+            {
+                return View();
+            }
+            return RedirectToAction("Index","Home");
         }
 
         public IActionResult Register(string username, string email, string password)
@@ -76,6 +80,8 @@ namespace Day6Mydemo.Controllers
             }
             if (_context.Users.Any(u => u.Username == username && u.Password == password))
             {
+                HttpContext.Session.SetString("Username", username);
+                HttpContext.Session.SetString("Password", password);
                 return RedirectToAction("Index", "Home");
             }
             else

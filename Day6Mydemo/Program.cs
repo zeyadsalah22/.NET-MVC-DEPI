@@ -10,13 +10,24 @@ namespace Day6Mydemo
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            //builder.Services.AddAuthentication("Cookies")
+            //    .AddCookie("Cookies", options =>
+            //    {
+            //        options.LoginPath = "/AuthUsers/Login";  // Path for login
+            //        options.LogoutPath = "/AuthUsers/Logout";  // Path for logout
+            //        options.ExpireTimeSpan = TimeSpan.FromDays(14);  // Default expiration time for cookies
+            //        options.SlidingExpiration = true;  // Sliding expiration to renew cookie on each request
+            //    });
 
             //builder.Services.AddRazorPages().AddSessionStateTempDataProvider();
             //builder.Services.AddControllersWithViews().AddSessionStateTempDataProvider();
-            builder.Services.AddSession(config =>
+            builder.Services.AddSession(options =>
             {
-                config.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.IdleTimeout = TimeSpan.FromMinutes(30);  // How long the session can be idle before timing out
+                //options.Cookie.HttpOnly = true;  // Ensures cookie cannot be accessed by client-side scripts
+                //options.Cookie.IsEssential = true;  // Marks the cookie as essential for GDPR compliance
             });
+
 
             builder.Services.AddDbContext<Day6MvcdbContext>(options =>
             {
@@ -33,6 +44,8 @@ namespace Day6Mydemo
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // app.UseAuthentication();
 
             app.UseAuthorization();
 
