@@ -27,7 +27,6 @@ namespace Day6Mydemo.Controllers
             }
             return RedirectToAction("Index","Home");
         }
-        //change
         public IActionResult Register(string username, string email, string password)
         {
             Username = username;
