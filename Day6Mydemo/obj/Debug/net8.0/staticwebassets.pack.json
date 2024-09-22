@@ -449,6 +449,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\wwwroot\\images\\products\\briefcase.png",
+      "PackagePath": "staticwebassets\\images\\products\\briefcase.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\wwwroot\\images\\products\\default.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\default.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\wwwroot\\images\\products\\mobile2409220310802.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\mobile2409220310802.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\wwwroot\\images\\products\\unkown person.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\unkown person.jpg"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

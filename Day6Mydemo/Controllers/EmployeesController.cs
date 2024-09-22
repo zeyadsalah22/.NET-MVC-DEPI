@@ -59,7 +59,7 @@ namespace Day6Mydemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("EmployeeId,EmployeeName,Job,Salary,Address,Email,DepartId")] Employee employee)
+        public IActionResult Create([ModelBinder(typeof(EmployeeBinder))] Employee employee)
         {
             if (ModelState.IsValid)
             {
