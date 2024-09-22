@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Lenovo\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\Desktop\Career\DEPI\Technical\MVC\.NET-MVC-DEPI\Day6Mydemo
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/AuthUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFVzZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/AuthUsers/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFVzZXJzXGxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/Departments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/Employees/ShowEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXFNob3dFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,12 +90,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/Home/ShowWebsite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93V2Vic2l0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/TestOne/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdE9uZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/TestOne/show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdE9uZVxzaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/TestTwo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFR3b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/OneDrive - Egypt Japan University Of Science and Technology (E-JUST)/Desktop/Career/DEPI/Technical/MVC/.NET-MVC-DEPI/Day6Mydemo/Views/_ViewImports.cshtml]
