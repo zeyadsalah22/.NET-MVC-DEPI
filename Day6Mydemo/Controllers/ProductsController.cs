@@ -17,6 +17,9 @@ namespace Day6Mydemo.Controllers
         public string MessageAdd { get; set; }
         [TempData]
         public string MessageDelete { get; set; }
+        private string defaultPhoto = "default.jpeg";
+        private readonly string _imageFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products");
+
         public ProductsController(Day6MvcdbContext context)
         {
             _context = context;
@@ -30,7 +33,7 @@ namespace Day6Mydemo.Controllers
             {
                 if(!System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", item.Photo)))
                 {
-                    item.Photo = "";
+                    item.Photo = defaultPhoto;
                 }
             }
             return View(listproduct);
@@ -52,7 +55,7 @@ namespace Day6Mydemo.Controllers
             }
             if (!System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", product.Photo)))
             {
-                product.Photo = "";
+                product.Photo = defaultPhoto;
             }
 
             return View(product);
@@ -69,19 +72,8 @@ namespace Day6Mydemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Product product, IFormFile photo)
+        public async Task<IActionResult> Create([ModelBinder(BinderType = typeof(ProductBinder))] Product product)
         {
-            if(photo!=null && photo.Length > 0)
-            {
-                string extension = Path.GetExtension(photo.FileName);
-                string filename = product.ProductName + DateTime.Now.ToString("yyMMddhhssfff") + extension;
-                var filepath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", filename);
-                using (var stream = new FileStream(filepath, FileMode.Create)){
-                    await photo.CopyToAsync(stream);
-                }
-                
-                product.Photo = filename;
-            }
             if (ModelState.IsValid)
             {
                 _context.Add(product);
@@ -105,6 +97,10 @@ namespace Day6Mydemo.Controllers
             {
                 return NotFound();
             }
+            if (!System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", product.Photo)))
+            {
+                product.Photo = defaultPhoto;
+            }
             return View(product);
         }
 
@@ -113,7 +109,7 @@ namespace Day6Mydemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,ProductName,Price,Photo")] Product product)
+        public async Task<IActionResult> Edit(int id, [ModelBinder(BinderType = typeof(ProductBinder))] Product product)
         {
             if (id != product.ProductId)
             {
@@ -198,11 +194,13 @@ namespace Day6Mydemo.Controllers
             }
             if(!System.IO.File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/products", product.Photo)))
             {
-                product.Photo = "";
+                product.Photo = defaultPhoto;
             }
 
             return View(product);
         }
+
+        
 
         private bool ProductExists(int id)
         {
