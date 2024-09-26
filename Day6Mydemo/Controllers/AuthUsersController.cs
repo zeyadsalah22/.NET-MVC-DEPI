@@ -1,4 +1,5 @@
 ﻿using Day6Mydemo.Models;
+using Day6Mydemo.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Day6Mydemo.Controllers
@@ -68,19 +69,19 @@ namespace Day6Mydemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string username, string password)
+        public IActionResult Login(LoginViewModel loginViewModel)
         {
-            Username = username;
-            Password = password;
-            if (username == null || password == null)
+            Username = loginViewModel.Username;
+            Password = loginViewModel.Password;
+            if (loginViewModel.Username == null || loginViewModel.Password == null)
             {
                 Error = "Must Enter Username & Password";
                 return RedirectToAction("Login");
             }
-            if (_context.Users.Any(u => u.Username == username && u.Password == password))
+            if (_context.Users.Any(u => u.Username == loginViewModel.Username && u.Password == loginViewModel.Password))
             {
-                HttpContext.Session.SetString("Username", username);
-                HttpContext.Session.SetString("Password", password);
+                HttpContext.Session.SetString("Username", loginViewModel.Username);
+                HttpContext.Session.SetString("Password", loginViewModel.Password);
                 return RedirectToAction("Index", "Home");
             }
             else
