@@ -1,20 +1,23 @@
-﻿@{
+﻿@model LoginViewModel
+@{
     ViewData["Title"] = "Login";
 }
 <h1>Login</h1>
 
 <form action="/AuthUsers/Login" method="post">
     <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" placeholder="Enter Username" value=@TempData["Username"] name="username">
+        <label asp-for="Username">Username</label>
+        <input type="text" class="form-control" id="Username" placeholder="Enter Username" value=@TempData["Username"] name="Username">
+        <span asp-validation-for="Username" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Password" value=@TempData["Password"] name="password">
+        <label asp-for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" placeholder="Password" value=@TempData["Password"] name="Password">
+        <span asp-validation-for="Password" class="text-danger"></span>
     </div>
     <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="rememberme" name="rememberme">
-        <label class="form-check-label" for="rememberme">remember me</label>
+        <input asp-for="RememberMe" type="checkbox" class="form-check-input" id="Rememberme" name="Rememberme">
+        <label class="form-check-label" for="Rememberme">Remember me</label>
     </div>
     @if (TempData.ContainsKey("Error"))
     {
@@ -28,4 +31,8 @@
     Create new account? <a href="/AuthUsers/Index">Register</a>
 </div>
 
-
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
