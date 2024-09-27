@@ -95,5 +95,11 @@ namespace Day6Mydemo.Controllers
             int? age = HttpContext.Session.GetInt32("age");
             return Content($"Name: {name}, Age: {age}");
         }
+
+        public IActionResult TestAction()
+        {
+            ViewData["name"] = "smart software";
+            return View();
+        }
     }
 }

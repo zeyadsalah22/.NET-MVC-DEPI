@@ -200,8 +200,14 @@ namespace Day6Mydemo.Controllers
             return View(product);
         }
 
-        
-
+        public IActionResult CheckPrice(decimal Price)
+        {
+            if (Price < 100000)
+            {
+                return Json(true);
+            }
+            return Json(false);
+        }
         private bool ProductExists(int id)
         {
             return _context.Products.Any(e => e.ProductId == id);
