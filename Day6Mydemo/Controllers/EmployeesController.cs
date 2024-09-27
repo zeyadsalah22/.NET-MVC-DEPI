@@ -61,6 +61,10 @@ namespace Day6Mydemo.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create([ModelBinder(typeof(EmployeeBinder))] Employee employee)
         {
+            if (employee.DepartId==0)
+            {
+                ModelState.AddModelError("DepartId", "Please select a department");
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(employee);
