@@ -11,7 +11,7 @@ namespace Day6Mydemo.Models
             var salary = bindingContext.HttpContext.Request.Form["Salary"];
             var address = bindingContext.HttpContext.Request.Form["Address"];
             var email = bindingContext.HttpContext.Request.Form["Email"];
-            var departId = int.Parse(bindingContext.HttpContext.Request.Form["DepartId"]);
+            var Depart_ID = int.Parse(bindingContext.HttpContext.Request.Form["Depart_ID"]);
 
             if (!decimal.TryParse(salary, out _))
             {
@@ -28,12 +28,12 @@ namespace Day6Mydemo.Models
                 Salary = newsalary,
                 Address = address,
                 Email = email,
-                DepartId = departId
+                Depart_ID = Depart_ID
             };
 
-            //if (departId == 0)
+            //if (Depart_ID == 0)
             //{
-            //    bindingContext.ModelState.AddModelError("DepartId", "Please select a department"); // Add error message to ModelState
+            //    bindingContext.ModelState.AddModelError("Depart_ID", "Please select a department"); // Add error message to ModelState
             //    bindingContext.Result = ModelBindingResult.Failed();
             //    return;
             //}

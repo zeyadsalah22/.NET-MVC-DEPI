@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Day6Mydemo.Models;
+using Day6Mydemo.Repositories.Interfaces;
+using Day6Mydemo.ViewModels;
 
 namespace Day6Mydemo.Controllers
 {
@@ -16,17 +18,19 @@ namespace Day6Mydemo.Controllers
         [TempData]
         public string MessageDelete { get; set; }
 
-        private readonly Day6MvcdbContext _context;
+        // private readonly Day6MvcdbContext _context;
+        private readonly IDepartmentRepository _repository;
 
-        public DepartmentsController(Day6MvcdbContext context)
+        public DepartmentsController(IDepartmentRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
         // GET: Departments
         public IActionResult Index()
         {
-            return View( _context.Departments.ToList());
+            //return View( _context.Departments.ToList());
+            return View(_repository.GetAll());
         }
 
         // GET: Departments/Details/5
@@ -37,8 +41,7 @@ namespace Day6Mydemo.Controllers
                 return BadRequest();
             }
 
-            var department =  _context.Departments
-                .FirstOrDefault(m => m.DepartmentId == id);
+            var department =  _repository.GetById(id);
             if (department == null)
             {
                 return NotFound();
@@ -62,8 +65,7 @@ namespace Day6Mydemo.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(department);
-                _context.SaveChanges();
+                _repository.Create(department);
                 MessageAdd = $"Department {department.DepartmentName} added successfully";
                 return RedirectToAction(nameof(Index));
             }
@@ -78,7 +80,7 @@ namespace Day6Mydemo.Controllers
                 return BadRequest();
             }
 
-            var department =  _context.Departments.Find(id);
+            var department =  _repository.GetById(id);
             if (department == null)
             {
                 return NotFound();
@@ -102,8 +104,9 @@ namespace Day6Mydemo.Controllers
             {
                 try
                 {
-                    _context.Update(department);
-                    _context.SaveChanges();
+                    //_context.Update(department);
+                    //_context.SaveChanges();
+                    _repository.Update(department);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -129,8 +132,7 @@ namespace Day6Mydemo.Controllers
                 return BadRequest();
             }
 
-            var department =  _context.Departments
-                .FirstOrDefault(m => m.DepartmentId == id);
+            var department =  _repository.GetById(id);
             if (department == null)
             {
                 return NotFound();
@@ -144,20 +146,44 @@ namespace Day6Mydemo.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            var department = _context.Departments.Find(id);
+            var department = _repository.GetById(id);
             if (department != null)
             {
-                _context.Departments.Remove(department);
+                // _context.Departments.Remove(department);
+                _repository.Delete(id);
             }
 
-            _context.SaveChanges();
+            // _context.SaveChanges();
             MessageDelete = $"Department {department.DepartmentName} deleted successfully";
             return RedirectToAction(nameof(Index));
         }
 
         private bool DepartmentExists(int id)
         {
-            return _context.Departments.Any(e => e.DepartmentId == id);
+            return _repository.GetAll().Any(e => e.DepartmentId == id);
         }
+
+        public IActionResult ShowDepartments()
+        {
+            List<Department> departmentList = _repository.GetAll().ToList();
+            return View(departmentList);
+        }
+
+        public IActionResult GetDepartments(int pageNumber = 1, int pageSize=5) {
+            var totalRecords = _repository.GetAll().Count();
+            var departmentList = _repository.GetAll()
+                .OrderBy(x => x.DepartmentId)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize).ToList();
+            var viewModel = new DepartmentPaginationViewModel
+            {
+                Departments = departmentList,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalRecords = totalRecords
+            };
+            return PartialView("_departmentListPartial", viewModel);
+        }
+        
     }
 }

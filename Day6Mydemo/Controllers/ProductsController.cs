@@ -212,5 +212,17 @@ namespace Day6Mydemo.Controllers
         {
             return _context.Products.Any(e => e.ProductId == id);
         }
+
+        public IActionResult CardAsPartialView(int id)
+        {
+            var product = _context.Products.FirstOrDefault(p => p.ProductId == id);
+            return PartialView("_ProductCardPartial", product);
+        }
+
+        public IActionResult CardAsJson(int id)
+        {
+            var product = _context.Products.FirstOrDefault(p => p.ProductId == id);
+            return Json(product);
+        }
     }
 }

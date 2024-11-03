@@ -61,7 +61,7 @@ namespace Day6Mydemo.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<int?>("DepartId")
+                    b.Property<int?>("Depart_ID")
                         .HasColumnType("int")
                         .HasColumnName("Depart_ID");
 
@@ -85,7 +85,7 @@ namespace Day6Mydemo.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.HasIndex("DepartId");
+                    b.HasIndex("Depart_ID");
 
                     b.ToTable("Employees");
                 });
@@ -171,7 +171,7 @@ namespace Day6Mydemo.Migrations
                 {
                     b.HasOne("Day6Mydemo.Models.Department", "Depart")
                         .WithMany("Employees")
-                        .HasForeignKey("DepartId")
+                        .HasForeignKey("Depart_ID")
                         .HasConstraintName("FK_Employees_Departments");
 
                     b.Navigation("Depart");

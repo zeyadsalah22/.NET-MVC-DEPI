@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+@* <table class="table">
     <thead>
         <tr>
             <th>
@@ -38,5 +38,31 @@
         </tr>
 }
     </tbody>
-</table>
+</table> *@
+
+<div id="departmentListContainer">
+
+</div>
+
+@section Mysection{
+    <script>
+        $(document).ready(function () {
+            loadPage(1);
+        });
+
+        function loadPage(page) {
+            $.ajax({
+                url: '/Departments/GetDepartments',
+                type: 'GET',
+                data: { pageNumber: page },
+                success: function (result) {
+                    $('#departmentListContainer').html(result);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
+}
 

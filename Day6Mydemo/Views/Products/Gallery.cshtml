@@ -11,14 +11,16 @@
     {
         <div class="col">
             <div class="card h-100">
-                <img src="@Url.Content("~/images/products/" + item.Photo)" class="card-img-top" alt="@item.ProductName">
+                <partial name="_ProductCardPartial" model="item" />
+
+                @* <img src="@Url.Content("~/images/products/" + item.Photo)" class="card-img-top" alt="@item.ProductName">
                 <div class="card-body">
                     <h5 class="card-title">@item.ProductName</h5>
                     <p class="card-text">Price: @item.Price</p>
                 </div>
                 <div class="card-footer">
                     <a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-primary">Details</a>
-                </div>
+                </div> *@
             </div>
         </div>
     }

@@ -1,0 +1,22 @@
+﻿@model Employee
+
+<dl>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.EmployeeName)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.EmployeeName)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Job)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Job)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Depart)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Depart.DepartmentName)
+    </dd>
+</dl>

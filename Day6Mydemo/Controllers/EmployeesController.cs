@@ -7,25 +7,28 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Day6Mydemo.Models;
 using Day6Mydemo.ViewModels;
+using Day6Mydemo.Repositories.Interfaces;
 namespace Day6Mydemo.Controllers
 {
     public class EmployeesController : Controller
     {
-        private readonly Day6MvcdbContext _context;
+        private readonly IEmployeeRepository _repository;
+        private readonly IDepartmentRepository _departmentRepository;
         [TempData]
         public string MessageAdd { get; set; }
         [TempData]
         public string MessageDelete { get; set; }
-        public EmployeesController(Day6MvcdbContext context)
+        public EmployeesController(IEmployeeRepository repository, IDepartmentRepository departmentRepository)
         {
-            _context = context;
+            // _context = context;
+            _repository = repository;
+            _departmentRepository = departmentRepository;
         }
 
         // GET: Employees
         public IActionResult Index()
         {
-            var day6MvcdbContext = _context.Employees.Include(e => e.Depart);
-            return View(day6MvcdbContext.ToList());
+            return View(_repository.GetAllWithDepartments());
         }
 
         // GET: Employees/Details/5
@@ -36,9 +39,7 @@ namespace Day6Mydemo.Controllers
                 return BadRequest();
             }
 
-            var employee =  _context.Employees
-                .Include(e => e.Depart)
-                .FirstOrDefault(m => m.EmployeeId == id);
+            var employee =  _repository.GetByIdWithDepartments(id);
             if (employee == null)
             {
                 return NotFound();
@@ -50,7 +51,7 @@ namespace Day6Mydemo.Controllers
         // GET: Employees/Create
         public IActionResult Create()
         {
-            ViewData["DepartId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName");
+            ViewData["Depart_ID"] = new SelectList(_departmentRepository.GetAll(), "DepartmentId", "DepartmentName");
             return View();
         }
 
@@ -61,18 +62,17 @@ namespace Day6Mydemo.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create([ModelBinder(typeof(EmployeeBinder))] Employee employee)
         {
-            if (employee.DepartId==0)
+            if (employee.Depart_ID==0)
             {
-                ModelState.AddModelError("DepartId", "Please select a department");
+                ModelState.AddModelError("Depart_ID", "Please select a department");
             }
             if (ModelState.IsValid)
             {
-                _context.Add(employee);
-                _context.SaveChanges();
+                _repository.Create(employee);
                 MessageAdd = $"Employee {employee.EmployeeName} added successfully";
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.DepartId);
+            ViewData["Depart_ID"] = new SelectList(_departmentRepository.GetAll(), "DepartmentId", "DepartmentName", employee.Depart_ID);
             return View(employee);
         }
 
@@ -84,12 +84,12 @@ namespace Day6Mydemo.Controllers
                 return BadRequest();
             }
 
-            var employee = _context.Employees.Find(id);
+            var employee = _repository.GetById(id);
             if (employee == null)
             {
                 return NotFound();
             }
-            ViewData["DepartId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.DepartId);
+            ViewData["Depart_ID"] = new SelectList(_departmentRepository.GetAll(), "DepartmentId", "DepartmentName", employee.Depart_ID);
             return View(employee);
         }
 
@@ -98,7 +98,7 @@ namespace Day6Mydemo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("EmployeeId,EmployeeName,Job,Salary,Address,Email,DepartId")] Employee employee)
+        public IActionResult Edit(int id, [Bind("EmployeeId,EmployeeName,Job,Salary,Address,Email,Depart_ID")] Employee employee)
         {
             if (id != employee.EmployeeId)
             {
@@ -109,8 +109,9 @@ namespace Day6Mydemo.Controllers
             {
                 try
                 {
-                    _context.Update(employee);
-                    _context.SaveChanges();
+                    //_context.Update(employee);
+                    //_context.SaveChanges();
+                    _repository.Update(employee);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -125,7 +126,8 @@ namespace Day6Mydemo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.DepartId);
+            // ViewData["Depart_ID"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentName", employee.Depart_ID);
+            ViewData["Depart_ID"] = new SelectList(_departmentRepository.GetAll(), "DepartmentId", "DepartmentName", employee.Depart_ID);
             return View(employee);
         }
 
@@ -137,9 +139,10 @@ namespace Day6Mydemo.Controllers
                 return BadRequest();
             }
 
-            var employee = _context.Employees
-                .Include(e => e.Depart)
-                .FirstOrDefault(m => m.EmployeeId == id);
+            //var employee = _context.Employees
+            //    .Include(e => e.Depart)
+            //    .FirstOrDefault(m => m.EmployeeId == id);
+            var employee = _repository.GetById(id); 
             if (employee == null)
             {
                 return NotFound();
@@ -153,13 +156,14 @@ namespace Day6Mydemo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var employee = _context.Employees.Find(id);
+            var employee = _repository.GetById(id);
             if (employee != null)
             {
-                _context.Employees.Remove(employee);
+                // _context.Employees.Remove(employee);
+                _repository.Delete(id);
             }
 
-            _context.SaveChanges();
+            // _context.SaveChanges();
             MessageDelete = $"Employee {employee.EmployeeName} deleted successfully";
             return RedirectToAction(nameof(Index));
         }
@@ -170,9 +174,10 @@ namespace Day6Mydemo.Controllers
             {
                 return BadRequest();
             }
-            var employee = _context.Employees
-                .Include(e => e.Depart)
-                .FirstOrDefault(m => m.EmployeeId == id);
+            //var employee = _context.Employees
+            //    .Include(e => e.Depart)
+            //    .FirstOrDefault(m => m.EmployeeId == id);
+            var employee = _repository.GetByIdWithDepartments(id);
             if (employee == null)
             {
                 return NotFound();
@@ -189,7 +194,20 @@ namespace Day6Mydemo.Controllers
 
         private bool EmployeeExists(int id)
         {
-            return _context.Employees.Any(e => e.EmployeeId == id);
+            return _repository.GetAll().Any(e => e.EmployeeId == id);
+        }
+
+        public IActionResult ShowEmployeeDetails(int? id)
+        {
+            var employee = _repository.GetByIdWithDepartments(id);
+            
+            return PartialView("EmployeeDetailsPartial",employee);
+        } 
+        public IActionResult ShowEmployees(int departmentId)
+        {
+            //  List<Employee> employeeList = _context.Employees.Where(e => e.Depart_ID == departmentId).ToList();
+            List<Employee> employeeList = _repository.GetEmployeesByDepartment(departmentId).ToList();
+            return Json(employeeList);
         }
     }
 }

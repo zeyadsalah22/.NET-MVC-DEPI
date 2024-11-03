@@ -1,9 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Day6Mydemo.CustomFilters;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Day6Mydemo.Controllers
 {
+    // [Authorize]
     public class DemosController : Controller
     {
+        [ResponseCache(Duration = 100)]
         public IActionResult Index()
         {
             return View();
@@ -100,6 +104,23 @@ namespace Day6Mydemo.Controllers
         {
             ViewData["name"] = "smart software";
             return View();
+        }
+
+        public IActionResult Routing(int? id, string? name)
+        {
+            return Content($"Id: {id}, Name: {name}");
+        }
+        // [Route("route/{name:alpha}")]
+        [HttpGet("route/{name:alpha}")]
+        public IActionResult CustomRoute(string name)
+        {
+            return Content($"Name: {name}");
+        }
+        //[Authorize]
+        [CustomActionFilter]
+        public IActionResult TestFilter()
+        {
+            return Content("Filter test");
         }
     }
 }

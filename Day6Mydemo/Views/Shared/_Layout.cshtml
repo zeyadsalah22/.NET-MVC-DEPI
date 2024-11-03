@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - Day6Mydemo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Day6Mydemo.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -84,16 +86,18 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        @* @RenderSection("MySection", required: false)) *@
-        <div class="container">
-            &copy; 2024 - Day6Mydemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+@*     @Html.Partial("_FooterPartial") *@ 
+@*     @await Html.PartialAsync("_FooterPartial")
+ *@
+    @* @{
+        Html.RenderPartial("_FooterPartial");
+    } *@
+    <partial name="_FooterPartial" />
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("MySection", required: false))
 </body>
 </html>
 <script>

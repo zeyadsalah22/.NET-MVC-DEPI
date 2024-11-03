@@ -6,10 +6,10 @@ using Day6Mydemo.Validations;
 
 namespace Day6Mydemo.KeepDataAnnotation
 {
-    [ModelMetadataType(typeof(EmployeeMetaData))]
-    public partial class Employee
-    {
-    }
+    //[ModelMetadataType(typeof(EmployeeMetaData))]
+    //public partial class Employee
+    //{
+    //}
     public class EmployeeMetaData
     {
         [Key]
@@ -32,6 +32,6 @@ namespace Day6Mydemo.KeepDataAnnotation
 
         //[ForeignKey(nameof(Depart))] //
         [ForeignKey("Depart")]
-        public int? DepartId { get; set; }
+        public int? Depart_ID { get; set; }
     }
 }

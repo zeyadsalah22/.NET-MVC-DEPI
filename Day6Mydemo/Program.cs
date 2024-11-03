@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Day6Mydemo.Models;
+using Day6Mydemo.Repositories.Implements;
+using Day6Mydemo.Repositories.Interfaces;
+using Day6Mydemo.CustomFilters;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 namespace Day6Mydemo
 {
     public class Program
@@ -9,6 +14,16 @@ namespace Day6Mydemo
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            builder.Services.AddDbContext<Day6MvcdbContext>(options =>
+                options.UseSqlServer(connectionString));
+
+            builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<Day6MvcdbContext>();
+            
+            builder.Services.AddControllersWithViews(
+                option => option.Filters.Add(new CustomActionFilter()));
+            
             builder.Services.AddControllersWithViews();
             //builder.Services.AddAuthentication("Cookies")
             //    .AddCookie("Cookies", options =>
@@ -28,11 +43,14 @@ namespace Day6Mydemo
                 //options.Cookie.IsEssential = true;  // Marks the cookie as essential for GDPR compliance
             });
 
-
-            builder.Services.AddDbContext<Day6MvcdbContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
+            builder.Services.AddTransient<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<Day6MvcdbContext>();
+            //builder.Services.AddDbContext<Day6MvcdbContext>(options =>
+            //{
+            //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            //});
 
             var app = builder.Build();
 
@@ -41,15 +59,25 @@ namespace Day6Mydemo
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            // add custom error page
             app.UseStaticFiles();
 
             app.UseRouting();
 
-            // app.UseAuthentication();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
             app.UseSession();
+
+            app.MapControllerRoute(
+                name: "demo",
+                pattern: "demo/{id:range(10,50):int?}/{name:alpha?}",
+                new
+                {
+                    controller = "Demos",
+                    action = "Routing"
+                });
 
             app.MapControllerRoute(
                 name: "default",

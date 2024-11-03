@@ -4,10 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
+<h1><i class="fa fa-list"></i>Index</h1>
+<div id="div1"></div>
 <p>
     <a asp-action="Create">Create New</a>
+</p>
+<p>
+    <a asp-action="ShowDepartments" asp-controller="Departments">Show Lists</a>
 </p>
 <table class="table">
     <thead>
@@ -58,10 +61,32 @@
                 <a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.EmployeeId">Details</a> |
                 <a asp-action="ShowEmployee" asp-route-id="@item.EmployeeId">Show</a> |
+                <a href="#" onclick="GetEmployeeDetails(@item.EmployeeId)">Show Emp</a> |
                 <a asp-action="Delete" asp-route-id="@item.EmployeeId">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+
+@section MySection{
+    <script>
+        @*Javascript with Jquery, AJAX *@
+            function GetEmployeeDetails(id) {
+                event.preventDefault();
+                console.log(id);
+                $.ajax({
+                    url: '/Employees/ShowEmployeeDetails/' + id,
+                    // data: {"id" : id},
+                    success: function (result) {
+                        $("#div1").html(result)
+                        console.log(result);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            }
+    </script>
+}
 

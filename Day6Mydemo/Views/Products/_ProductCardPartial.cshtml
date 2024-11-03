@@ -1,0 +1,10 @@
+﻿@model Product
+
+<img src="@Url.Content("~/images/products/" + Model.Photo)" class="card-img-top" alt="@Model.ProductName">
+<div class="card-body">
+    <h5 class="card-title">@Model.ProductName</h5>
+    <p class="card-text">Price: @Model.Price</p>
+</div>
+<div class="card-footer">
+    <a asp-action="Details" asp-route-id="@Model.ProductId" class="btn btn-primary">Details</a>
+</div>
