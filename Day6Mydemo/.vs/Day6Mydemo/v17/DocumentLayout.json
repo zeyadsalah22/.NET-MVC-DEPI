@@ -1,12 +1,145 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\Day6Mydemo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A477C4-095C-4AE4-BA81-514E524D873E}|..\\webapidemo\\webapidemo.csproj|c:\\users\\lenovo\\onedrive - egypt japan university of science and technology (e-just)\\desktop\\career\\depi\\technical\\mvc\\.net-mvc-depi\\webapidemo\\migrations\\20241106215810_start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "..\\webapidemo\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "..\\webapidemo\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAwHIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T22:00:15.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20241106215810_start.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Migrations\\20241106215810_start.cs",
+              "RelativeDocumentMoniker": "..\\webapidemo\\Migrations\\20241106215810_start.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Migrations\\20241106215810_start.cs",
+              "RelativeToolTip": "..\\webapidemo\\Migrations\\20241106215810_start.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:58:11.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\webapidemo\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\appsettings.json",
+              "RelativeToolTip": "..\\webapidemo\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-06T21:55:40.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\webapidemo\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\webapidemo\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAwBMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:46:17.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\webapidemo\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Models\\Employee.cs",
+              "RelativeToolTip": "..\\webapidemo\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:42:24.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "..\\webapidemo\\Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "..\\webapidemo\\Controllers\\ValuesController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAIwBYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:13:01.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "..\\webapidemo\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "..\\webapidemo\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T22:57:40.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Program.cs",
+              "RelativeDocumentMoniker": "..\\webapidemo\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Egypt Japan University Of Science and Technology (E-JUST)\\Desktop\\Career\\DEPI\\Technical\\MVC\\.NET-MVC-DEPI\\webapidemo\\Program.cs",
+              "RelativeToolTip": "..\\webapidemo\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T22:56:45.177Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
